@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1: Contextualise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <h1>Project 1: Contextualise</h1>
+            <div style="padding:6px;">
+              <p>For this project, I made three code "sketches" to brush up on my skills, all following the development and evolution of a single fish character. I used plain CSS, p5.js, and melonJS. I already knew p5 and CSS, but I wanted to re-familarize myself and push what I knew. But I learned melonJS, a game development Javascript library, from scratch. These sketches challenged me and gave me a toolbox of skills to use for the rest of the year.</p>
+            </div>
+
+            <div class="responsive">
+              <h2>CSS</h2>
+                <div class="gallery">
+                    <iframe src="https://oliviapasian.github.io/Contextualise-Sketch-1/"></iframe>      
+                </div>
+                <a target="_blank" href="https://oliviapasian.github.io/Contextualise-Sketch-1/" class="button">OPEN</a> 
+                <button class="accordion">INFO ↓</button>
+                <div class="panel">
+                  <p>For my CSS web sketch, I wanted to re-familiarize myself with the basics that I could see myself using later on for game development. I focused on shapes and animation, which was a lot of repetitive code of moving things around the screen. But that allowed me to get used to simple coding again since it had been a while since I used CSS for something like "drawing" rather than website making. For this sketch, I created this fish character and had them float in a bubble, focusing on making the code run cleanly and smoothly.</p>
+                </div>   
+              </div>
+              
+              
+              <div class="responsive">
+                <h2>p5.js</h2>
+                <div class="gallery">
+                    <iframe src="https://oliviapasian.github.io/Contextualise-Sketch-2/" ></iframe>      
+                </div>
+                <a target="_blank" href="https://oliviapasian.github.io/Contextualise-Sketch-2/" class="button">OPEN</a> 
+                <button class="accordion">INFO ↓</button>
+                <div class="panel">
+                  <p>For my p5.js web sketch, I kept the same fish character I made in CSS and used p5 to create an editable fish bowl for the fish to live in. I started with coding the simple shapes of the bowl and then pushed myself to learn how to create a drag and drop tool. This was difficult because I had to combine my own illustrated images with code and set parameters of the mouse knowing which object it was on and when to drag it. After a lot of time and trial and error, I figured out the drag and drop, then cleaned it up so the starting positions of the objects were all in one space. This sketch reminded me how cool p5.js is and the potential it has for future game-related endeavors.</p>
+                </div>   
+              </div>
+              
+              <div class="responsive">
+                <h2>melonJS</h2>
+                <div class="gallery">
+                    <iframe src="https://oliviapasian.github.io/Contextualise-Sketch-3/"></iframe>  
+                </div>                    
+                <a target="_blank" href="https://oliviapasian.github.io/Contextualise-Sketch-3/" class="button">OPEN</a>  
+                <button class="accordion">INFO ↓</button>
+                  <div class="panel">
+                    <p>My melonJS web sketch was easily the hardest and most time-consuming. MelonJS is a really cool Javascript game development library that works with another tool called Tiled, which allows you to create collisions and place objects within the tool and it basically converts it to code. Since I had not used melonJS or Tiled before, it took me a while to research, follow some tutorials, and practice to start understanding how it all worked. Most of my research was just trial and error by jumping right into my own little fish game and figuring it out as I went. I wanted to create an open space for the fish character to swim around since it had been in a bowl before, so I created an open space that you can use the arrow keys to move around in, as well as some object collections on the seafloor and some sharks which "damage" the fish. This was a really cool learning experience and I can see myself continuing to use melonJS and Tiled in future thesis work.</p>
+                  </div> 
+              </div>
+              
+              
+              <div class="clearfix"></div>
+              
+              <script>
+                var acc = document.getElementsByClassName("accordion");
+              var i;
+
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+              </script>
+              
+</body>
+</html>

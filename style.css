@@ -1,0 +1,156 @@
+/* I used a few tutorials from W3 schools to help me remember how to make responsive images/iframes, here are the links: */
+/* https://www.w3schools.com/css/css_image_gallery.asp */
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+/* https://www.w3schools.com/howto/howto_js_accordion.asp */
+
+body{
+    background-color: skyblue;
+}
+h1{
+    color: slateblue;
+    background-color: lavenderblush;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    width: fit-content;
+    text-align: center;
+    border: 2px solid slateblue;
+    padding: 5px;
+
+}
+
+h2{
+  color: slateblue;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+p{
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: slateblue;
+}
+
+/* Accordion */
+.accordion {
+  background-color: lavenderblush;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: slateblue;  cursor: pointer;
+  padding: 10px 20px;
+  width: 99%;
+  border: none;
+  text-align: center;
+  outline: 2px solid slateblue;
+  font-size: 20px;
+  transition: 0.4s;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+.active, .accordion:hover {
+  background-color: slateblue;
+  color: lavenderblush;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Buttons */
+.button {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  background-color: lavenderblush; 
+  color: slateblue; 
+  border: 2px solid slateblue;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+.button:hover {
+  background-color: slateblue;
+  color: lavenderblush;
+}
+
+/* Gallery */
+div.gallery {
+  border: 2px solid slateblue;
+  overflow: hidden;
+  height: 50%;
+}
+
+div.gallery:hover {
+  border: 4px solid slateblue;
+}
+
+div.gallery iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Responsiveness */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lavenderblush; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: slateblue; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: tomato; 
+}
+
